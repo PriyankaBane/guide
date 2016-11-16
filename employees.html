@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Page title -->
+	<title>Employees-HR Manager-Documentation-SkilledTree</title>
+	<!-- Page description -->
+	<meta name="description" content="">
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon  -->
+	
+	<!-- Include StyleSheets -->
+	<link rel="stylesheet" href="https://s3.amazonaws.com/skilledtree-public/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+	<!-- <link rel="stylesheet" href="css/custom.css"> -->
+	<script src="https://s3.amazonaws.com/skilledtree-public/modernizr.js"></script>
+<script src="https://use.fontawesome.com/c16d4d06d0.js"></script>
+</head>
+<style>
+a.active { border-bottom:2px solid grey; }
+
+
+</style>
+
+<body class="">
+	<!--[if lt IE 8]>
+	    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<!-- Preloader: uncomment this if you want to show a smooth preloader while the page is loading. Don't forget to add the 'js-preload-me' class on the <body> tag. -->
+	<!-- <div class="preloader js-preloader"><div class="preloader-animation"></div></div>
+ -->
+	<!-- End of Preloader -->
+	<div class="page js-page ">
+		<!-- One Page Sidebar -->
+		<div class="one-page-sidebar">
+			<!-- One Page Sidebar Header -->
+			<div class="one-page-sidebar-header">
+				<!-- One Page Logo -->
+				<div class="one-page-logo">
+					<!-- Logo Image -->
+					<a href="/hr_managers" class="logo-image ">
+						<img src="https://s3.amazonaws.com/skilledtree-public/logo.png">
+					</a>
+					<!-- End of Logo Image -->
+				</div>
+				<!-- End of One Page Logo -->
+				<!-- One Page Meta -->
+				
+				<!-- End of One Page Meta -->
+			</div>
+			<!-- End of One Page Sidebar Header -->
+			<!-- One Page Nav -->
+			<div class="one-page-nav-wrapper js-custom-scrollbar">
+				<ul class="one-page-nav js-one-page-nav" data-prepend-to=".js-prepend-mobile-menu">
+					<li>
+						<a href="#Add_Employees">
+							<span class="one-page-nav-icon ">
+								<i class="fa fa-user-plus"></i>
+							</span>Add Employees <span class="fa fa-caret-down pull-right" style="color:grey!important;"></span></a>
+							<ul>
+							<li class="is-active">
+					<a href="#upload_csv_ods" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-upload"></i>
+							</span>Upload CSV/ODS</a>
+					</li>
+					<li class="">
+						<a href="#By_Manually
+" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-pencil"></i>
+							</span>By Manually
+</a>
+					</li>
+					
+				
+					
+					
+					
+							
+
+							</ul>
+					</li>
+					<li>
+						<a href="#View_Employees">
+							<span class="one-page-nav-icon ">
+								<i class="fa fa-eye"></i>
+							</span>View Employees
+<span class="fa fa-caret-down pull-right" style="color:grey!important;"></span></a>
+<ul>
+							<li class="">
+						<a href="#Assign_Team" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-users"></i>
+							</span> Assign Team</a>
+					</li>
+					<li class="">
+						<a href="#Edit_Emp_ID
+" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-edit"></i>
+							</span>Edit Emp ID
+</a>
+					</li>
+					<li class="">
+		<a href="#Resend_Credentials" class="">
+			<span class="one-page-nav-icon">
+				<i class="fa fa-key"></i>
+			</span>Resend Credentials</a>
+					</li>
+					<li class="">
+				<a href="#Delete_Employee" class="">
+			<span class="one-page-nav-icon">
+				<i class="fa fa-trash"></i>
+							</span>Delete Employee
+</a>
+</li>
+					
+					
+					<li class="">
+			<a href="#Send_a_Message" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-envelope"></i>
+							</span>Send a Message
+
+</a>
+					</li>
+					
+				
+					
+					
+					
+							
+
+							</ul>
+							
+					</li>
+					
+					<li class="">
+						<a href="#Referral_Bonus_Payouts">
+			<span class="one-page-nav-icon fa fa-caret">
+								<i class="fa fa-gift"></i>
+							</span>Referral Bonus Payouts
+<span class="glyphicon glyphicon-chevron-down pull-right" style="color:grey!important;"></span></a>
+							
+					
+					</li>
+					<li class="">
+						<a href="#Why_Social_Integration
+
+">
+							<span class="one-page-nav-icon fa fa-caret">
+						<i class="fa fa-google"></i>
+							</span>Why Social Integration
+
+<span class="glyphicon glyphicon-chevron-down pull-right" style="color:grey!important;"></span></a>
+							
+					
+					</li>
+			</div>
+			<!-- End of One Page Nav -->
+			<!-- One Page Sidebar Footer -->
+			<footer class="one-page-sidebar-footer">
+				<a href="https://www.skilledtree.com">SkilledTree</a>, all rights reserved. 2016 © </footer>
+			<!-- End of One Page Sidebar Footer -->
+		</div>
+		<!-- End of One Page Sidebar -->
+		<!-- One Page Content -->
+		<div class="one-page-content">
+			<!-- Header -->
+			<header class="header large header-one-page js-header-fixed">
+				<div class="container-fluid container-spaced">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-5">
+							<div class="visible-sm-block visible-xs-block">
+								<!-- Logo Image -->
+								<a href="/" class="logo-image logo-animated">
+									<img src="img/logos/logo.png" alt="logo">
+								</a>
+								<!-- End of Logo Image -->
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-6 col-xs-7">
+							<!-- Menu -->
+							<nav class="right helper">
+								<ul class="menu sf-menu js-menu">
+									<li>
+										<a  href="/hr_managers/dashboard"> Dashboard
+											</a>
+										
+									</li>
+									<li>
+										<a  href="/hr_managers/management"> Management
+											</a>
+										
+									</li>
+									<li>
+										<a  href="/hr_managers/Jobs">Jobs</a>
+										
+									</li>
+									<li>
+										<a  href="/hr_managers/resumes">Resumes </a>
+										
+									</li>
+									<li>
+										<a class="active" href="/hr_managers/employees">Employees</a>
+										
+									</li>
+									<li>
+										<a href="/hr_managers/gamification">Gamification</a>
+										
+									</li> 
+									<li>
+										<a href="/hr_managers/reports">Reports</a>
+										
+									</li>
+									<li>
+										<a href="/hr_managers/header">Header</a>
+										
+									</li>
+									<li>
+										<a href="/hr_managers/settings">Settings</a>
+										
+									</li>
+
+									
+								</ul>
+							</nav>
+							<!-- End of Menu -->
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- End of Header -->
+			<div id="content">
+				<div class="container-fluid container-spaced">
+					<div class="row">
+					<div class="col-md-12">
+							
+							<!-- Category Info -->
+					<div class="category-info  helper pt0" id="Add_Employees"><br>
+								<h3>Add Employees
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3><br><br>
+								<div class="row">
+				
+				<div class="col-md-8">
+				<img src="/images/H12.png" width="120%">
+				</div>
+			
+				</div>
+								
+</div>
+
+</div>
+					<div class="col-md-12">
+							
+							<!-- Category Info -->
+					<div class="category-info  helper pt0" id="upload_csv_ods"><br>
+								<h3> Upload CSV/ODS
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">Make sure that you have added team in the ‘Settings’ page. Employees list can be uploaded in the form of an excel with the extension of *.xls,*.xlsx,*.csv. File should have Employee Id, Name, Email/Phone, Team.
+
+ 
+
+
+</p>
+</div>
+
+</div>
+<div class="row">
+				
+				<div class="col-md-8">
+				<img src="/images/H13.png" width="120%">
+				</div>
+			
+				</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+						<div class="category-info  helper pt0" id="By_Manually"><br>
+								<h3> By Manually
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">Employees can be added manually by uploading their Emp ID, Name, Email/Phone and Team He/She belongs to. More than one employee can be added at a time by clicking the ‘Add More’ Button.
+ 
+
+
+</p>
+</div>
+
+					
+</div>
+<div class="row">
+				
+				<div class="col-md-8">
+				<img src="/images/H14.png" width="120%">
+				</div>
+			
+				</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info helper pt0" id="View_Employees">
+							<br><br>
+
+								<h3>View_Employees
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">If you want to move an employee from one team to another team, this can be possible by clicking the editable dropdown in the Employees' List which is right below on ‘View Employees’ section.
+
+ 
+
+
+</p>
+</div>
+</div>
+<div class="row">
+				
+				<div class="col-md-8">
+				<img src="/images/H9.png" width="120%">
+				</div>
+			
+				</div>
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info helper pt0" id="Assign_Team">
+							<br><br>
+
+								<h3>Assign Team
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">If you want to move an employee from one team to another team, this can be possible by clicking the editable dropdown in the Employees' List which is right below on ‘View Employees’ section.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Edit_Emp_ID">
+								<h3> Edit Emp ID
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">Employee ID can be edited by clicking the corresponding link in the Employee List.
+
+
+
+</p>
+</div>
+</div>
+
+
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+						<div class="category-info  helper pt0" id="Resend_Credentials">
+								<h3> Resend Credentials
+
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">You can send login credentials to the employee if the employee has not yet joined SkilledTree or not yet received the credentials by clicking the resend icon in the employees list. He/She will be receiving either an Email or  SMS based on the information you had given.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Delete_Employee">
+								<h3> Delete Employee
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">Employees information can be deleted from the database when he/she resigned from the job by clicking the delete icon in the List.
+ 
+
+
+</p>
+</div>
+</div>
+
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Send_a_Message">
+
+								<h3>Send a Message
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">You can  stay connected with any employees  in the organization by clicking the chat icon.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Referral_Bonus_Payouts">
+
+								<h3>Referral Bonus Payouts
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">This list shows the information of the referral candidates who got selected and the employees who referred him/her will get the referral rewards based on the company policy.
+
+ 
+
+
+</p>
+</div>
+</div>
+<div class="row">
+				
+				<div class="col-md-8">
+				<img src="/images/H17.png" width="120%">
+				</div>
+			
+				</div>
+<br>
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Why_Social_Integration">
+<br>
+								<h3> Why Social Integration
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content"> Employees can integrate to their social accounts so that whenever their team recruiter posts any job, it will be posted to their social media site automatically.
+ 
+
+
+</p>
+</div>
+</div>
+<div class="row">
+				
+				<div class="col-md-8">
+				<img src="/images/H18.png" width="120%">
+				</div>
+			
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+							<!-- End of Caregory Info -->
+							
+							<!-- Category Info -->
+							
+							
+
+							<!-- End of Caregory Info -->
+							
+							<!-- Category Info -->
+							
+
+
+							
+							<!-- End of Caregory Info -->
+							<!-- File Tree -->
+							
+							<!-- End of FIle Tree -->
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							
+							<!-- Category Info -->
+							
+</div>
+			</div>				<!-- End of Caregory Info -->
+							<!-- Note -->
+							
+							<!-- End of Note -->
+							
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							<!-- Gif Player -->
+							
+							<!-- End of Grid view -->
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							<!-- Table-->
+							<!-- End of Table -->
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							<!-- Browser Support -->
+							
+							<!-- End of Browser Support -->
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							<!-- Faq -->
+							
+							
+							<!-- End of Faq -->
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							<!-- Donate -->
+							
+							<!-- End of Donate -->
+						
+					</div>
+				</div>
+			</div>
+		
+		<!-- End of One Page Content -->
+	
+	<script src="https://s3.amazonaws.com/skilledtree-public/all.js"></script>
+	
+
+
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+	<!-- 
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+     -->
+</body>
+
+</html>

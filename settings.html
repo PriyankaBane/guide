@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Page title -->
+	<title>Settings-HR Manager-Documentation-SkilledTree</title>
+	<!-- Page description -->
+	<meta name="description" content="">
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon  -->
+	
+	<!-- Include StyleSheets -->
+	<link rel="stylesheet" href="https://s3.amazonaws.com/skilledtree-public/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+	<!-- <link rel="stylesheet" href="css/custom.css"> -->
+	<script src="https://s3.amazonaws.com/skilledtree-public/modernizr.js"></script>
+<script src="https://use.fontawesome.com/c16d4d06d0.js"></script>
+</head>
+<style>
+a.active { border-bottom:2px solid grey; }
+
+
+</style>
+
+<body class="">
+	<!--[if lt IE 8]>
+	    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<!-- Preloader: uncomment this if you want to show a smooth preloader while the page is loading. Don't forget to add the 'js-preload-me' class on the <body> tag. -->
+	<!-- <div class="preloader js-preloader"><div class="preloader-animation"></div></div>
+ -->
+	<!-- End of Preloader -->
+	<div class="page js-page ">
+		<!-- One Page Sidebar -->
+		<div class="one-page-sidebar">
+			<!-- One Page Sidebar Header -->
+			<div class="one-page-sidebar-header">
+				<!-- One Page Logo -->
+				<div class="one-page-logo">
+					<!-- Logo Image -->
+					<a href="/hr_managers" class="logo-image ">
+						<img src="https://s3.amazonaws.com/skilledtree-public/logo.png">
+					</a>
+					<!-- End of Logo Image -->
+				</div>
+				<!-- End of One Page Logo -->
+				<!-- One Page Meta -->
+				
+				<!-- End of One Page Meta -->
+			</div>
+			<!-- End of One Page Sidebar Header -->
+			<!-- One Page Nav -->
+			<div class="one-page-nav-wrapper js-custom-scrollbar">
+				<ul class="one-page-nav js-one-page-nav" data-prepend-to=".js-prepend-mobile-menu">
+					<li class="is-active">
+						<a href="#My_Profile">
+							<span class="one-page-nav-icon ">
+								<i class="fa fa-file"></i>
+							</span>My Profile</a>
+							
+					</li>
+					<li>
+						<a href="#Company_Profile">
+							<span class="one-page-nav-icon ">
+								<i class="fa fa-file-o"></i>
+							</span>Company Profile
+</a>
+
+							
+					</li>
+					<li>
+						<a href="#Team">
+							<span class="one-page-nav-icon ">
+								<i class="fa fa-user-plus"></i>
+							</span>Team<span class="fa fa-caret-down pull-right" style="color:grey!important;"></span>
+</a>
+<ul>
+							<li class="">
+						<a href="#Add_Team" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-plus"></i>
+							</span>Add Team</a>
+					</li>
+					<li class="">
+						<a href="#Move_Team" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-arrows-alt"></i>
+							</span>Move Team</a>
+					</li>
+					<li class="">
+						<a href="#Edit_Team" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-edit"></i>
+							</span>Edit Team</a>
+					</li>
+					<li class="">
+						<a href="#Suspend_Team" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-power-off"></i>
+							</span>Suspend Team</a>
+					</li>
+					<li class="">
+						<a href="#Delete_Team" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-trash"></i>
+							</span>Delete Team</a>
+					</li>
+					</ul>
+							
+					</li>
+					<li>
+						<a href="#Statuses">
+							<span class="one-page-nav-icon ">
+								<i class="fa fa-star"></i>
+							</span>Statuses
+</a>
+
+							<li class="">
+						<a href="#Domain " class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-globe"></i>
+							</span>Domain </a>
+					</li>
+					<li class="">
+				<a href="#Password" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-key"></i>
+							</span>Password
+
+</a>
+					</li>
+					<li class="">
+					<a href="#Notifications" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-bell"></i>
+							</span>Notifications<span class="fa fa-caret-down pull-right" style="color:grey!important;"></span> 
+
+</a>
+<ul>
+<li class="">
+					<a href="#Team_Email" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-envelope"></i>
+							</span>Team Email
+
+</a>
+					</li>
+					<li class="">
+					<a href="#Job
+" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-black-tie"></i>
+							</span>Job 
+
+
+</a>
+					</li>
+					<li class="">
+					<a href="#Others" class="">
+							<span class="one-page-nav-icon">
+					<i class="fa fa-minus"></i>
+							</span>Others
+
+
+</a>
+					</li>
+</ul>
+					</li>
+					<li class="">
+						<a href="#My_Account" class="">
+							<span class="one-page-nav-icon">
+							<i class="fa fa-user"></i>
+							</span>My Account<span class="fa fa-caret-down pull-right" style="color:grey!important;"></span>
+
+
+</a>
+<ul>
+	<li class="">
+						<a href="#Search_Engine" class="">
+							<span class="one-page-nav-icon">
+						<i class="fa fa-search"></i>
+							</span>Search Engine
+
+
+</a>
+					</li><li class="">
+						<a href="#Delete_my_account
+" class="">
+							<span class="one-page-nav-icon">
+						<i class="fa fa-trash"></i>
+							</span>Delete my account
+
+
+
+</a>
+					</li>
+</ul>
+					</li>
+					
+				
+					
+					
+					
+							
+
+							
+
+							
+					</li>
+					
+					
+					
+			</div>
+			<!-- End of One Page Nav -->
+			<!-- One Page Sidebar Footer -->
+			<footer class="one-page-sidebar-footer">
+				<a href="https://www.skilledtree.com">SkilledTree</a>, all rights reserved. 2016 © </footer>
+			<!-- End of One Page Sidebar Footer -->
+		</div>
+		<!-- End of One Page Sidebar -->
+		<!-- One Page Content -->
+		<div class="one-page-content">
+			<!-- Header -->
+			<header class="header large header-one-page js-header-fixed">
+				<div class="container-fluid container-spaced">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-5">
+							<div class="visible-sm-block visible-xs-block">
+								<!-- Logo Image -->
+								<a href="/" class="logo-image logo-animated">
+									<img src="img/logos/logo.png" alt="logo">
+								</a>
+								<!-- End of Logo Image -->
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-6 col-xs-7">
+							<!-- Menu -->
+							<nav class="right helper">
+								<ul class="menu sf-menu js-menu">
+									<li>
+										<a  href="/hr_managers/dashboard"> Dashboard
+											</a>
+										
+									</li>
+									<li>
+										<a  href="/hr_managers/management"> Management
+											</a>
+										
+									</li>
+									<li>
+										<a  href="/hr_managers/Jobs">Jobs</a>
+										
+									</li>
+									<li>
+										<a  href="/hr_managers/resumes">Resumes</a>
+										
+									</li>
+									<li>
+										<a  href="/hr_managers/employees">Employees</a>
+										
+									</li>
+									<li>
+										<a href="/hr_managers/gamification">Gamification</a>
+										
+									</li> 
+									<li>
+										<a  href="/hr_managers/reports">Reports</a>
+										
+									</li>
+							<li>
+							<a  href="/hr_managers/header">Header</a>
+										
+									</li>
+									<li>
+										<a class="active" href="/hr_managers/settings">Settings</a>
+										
+									</li>
+
+									
+								</ul>
+							</nav>
+							<!-- End of Menu -->
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- End of Header -->
+			<div id="content">
+				<div class="container-fluid container-spaced">
+					<div class="row">
+					
+						<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="My_Profile">
+							<h3>My Profile
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+				<p class="category-content"> Few of your personal details will be needed in order to make the better identification for members in your network such as the Email notification which will be sent in the background along with the login credentials while adding employees etc.,. Those information includes First name, last name, email ,phone number, designation and photo of yours.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Company_Profile"><br>
+								<h3> Company Profile
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">Company information is needed to create the belief in employees’ friends and their friends. And also it would be helpful for them to know about the company in a better way.
+
+
+
+</p>
+</div>
+</div>
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info helper pt0" id="Team"><br>
+								<h3> Team
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3><br>
+								<div class="row">
+				
+				<div class="col-md-8">
+				<img src="/images/R16.png" width="120%">
+				</div>
+			
+				</div><br><br>
+				<div class="row">
+				
+				<div class="col-md-8">
+				<img src="/images/R17.png" width="120%">
+				</div>
+			
+				</div>
+								
+</div>
+</div>
+
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info helper pt0" id="Add_Team"><br>
+								<h3> Add Team
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">‘Default’ Team can be added by default while creating the account in Skilledtree. You can add maximum of 3 teams to your company. After adding 3 teams, ‘Add Team ’ button will be disabled and If you need more teams, then you can raise a request to SkilledTree Admin regarding the same. 
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info helper pt0" id="Move_Team"><br>
+								<h3> Move Team
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">In order to move the employees from one set of team to another, you can do it here. Select the ‘Source’ team and the ‘Destination’ team from the dropdown given. So all the employees under source team will be moved to the destination team.
+
+
+
+</p>
+</div>
+</div>
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info helper pt0" id="Edit_Team">
+							<h3>Edit Team
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">You can edit the name of the team by clicking on the corresponding edit pen icon in the list.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+						<div class="category-info helper pt0" id="Suspend_Team">
+								<h3> Suspend Team
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">You can edit the name of the team by clicking on the corresponding edit pen icon in the list.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+						<div class="category-info helper pt0" id="Delete_Team">
+								<h3> Delete Team
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">You can edit the name of the team by clicking on the corresponding edit pen icon in the list.
+
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+						<div class="category-info helper pt0" id="Statuses">
+								<h3> Statuses
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">Resume status such as Under Review, Short Listed, Interview, On Process, Selected, Rejected and Joined will be added by default. If you need some more statuses, you can add it here.
+
+ 
+
+
+</p>
+</div>
+</div>
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+						<div class="category-info helper pt0" id="Domain">
+								<h3> Domain
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content"> If your company needs a unique domain, you can request for a domain here. You can login to SkilledTree with your customized URL.
+ 
+
+
+</p>
+</div>
+</div>
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+						<div class="category-info helper pt0" id="Password">
+								<h3> Password
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">You can reset your password even if you are not sure. It will be automatically popped up the current password. So you can reset it easily.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+						<div class="category-info helper pt0" id="Team_Email">
+								<h3> Team Email
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">If you don’t want to get any notifications from your team, you can unsubscribe it here. And if you want, you can enable it too.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+						<div class="category-info helper pt0" id="Job">
+					<h3>Job
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">If you don’t want to get any job notifications, you can unsubscribe it here. And if you want, you can enable it too.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+						<div class="category-info helper pt0" id="Others">
+					<h3>Others
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">If you don’t want to get any other notifications from SkilledTree, you can unsubscribe it here. And if you want, you can enable it too.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+						<div class="category-info helper pt0" id="Search_Engine">
+								<h3> Search Engine
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">If you want to hide your profile from search engine, you can enable/disable it here.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+						<div class="category-info helper pt0" id="Delete_my_account">
+								<h3> Delete my account
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content"> We don’t want to leave you! But still if you were not satisfied or if you don’t want this product, you can delete your account here.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+							<!-- End of Caregory Info -->
+							
+							<!-- Category Info -->
+							
+							
+
+							<!-- End of Caregory Info -->
+							
+							<!-- Category Info -->
+							
+
+
+							
+							<!-- End of Caregory Info -->
+							<!-- File Tree -->
+							
+							<!-- End of FIle Tree -->
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							
+							<!-- Category Info -->
+							
+</div>
+			</div>				<!-- End of Caregory Info -->
+							<!-- Note -->
+							
+							<!-- End of Note -->
+							
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							<!-- Gif Player -->
+							
+							<!-- End of Grid view -->
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							<!-- Table-->
+							<!-- End of Table -->
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							<!-- Browser Support -->
+							
+							<!-- End of Browser Support -->
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							<!-- Faq -->
+							
+							
+							<!-- End of Faq -->
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							<!-- Donate -->
+							
+							<!-- End of Donate -->
+						
+					</div>
+				</div>
+			</div>
+		
+		<!-- End of One Page Content -->
+	
+	<script src="https://s3.amazonaws.com/skilledtree-public/all.js"></script>
+	
+
+
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+	<!-- 
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+     -->
+</body>
+
+</html>

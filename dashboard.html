@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Page title -->
+	<title>Dashboard-HR Manager-Documentation-SkilledTree</title>
+	<!-- Page description -->
+	<meta name="description" content="">
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon  -->
+	
+	<!-- Include StyleSheets -->
+	<link rel="stylesheet" href="https://s3.amazonaws.com/skilledtree-public/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="css/custom.css"> -->
+	<script src="https://s3.amazonaws.com/skilledtree-public/modernizr.js"></script>
+<script src="https://use.fontawesome.com/c16d4d06d0.js"></script>
+</head>
+<style>
+a.active { border-bottom:2px solid grey; }
+</style>
+
+<body class="">
+	<!--[if lt IE 8]>
+	    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<!-- Preloader: uncomment this if you want to show a smooth preloader while the page is loading. Don't forget to add the 'js-preload-me' class on the <body> tag. -->
+	<!-- <div class="preloader js-preloader"><div class="preloader-animation"></div></div>
+ -->
+	<!-- End of Preloader -->
+	<div class="page js-page ">
+		<!-- One Page Sidebar -->
+		<div class="one-page-sidebar">
+			<!-- One Page Sidebar Header -->
+			<div class="one-page-sidebar-header">
+				<!-- One Page Logo -->
+				<div class="one-page-logo">
+					<!-- Logo Image -->
+					<a href="/hr_managers" class="logo-image ">
+						<img src="https://s3.amazonaws.com/skilledtree-public/logo.png">
+					</a>
+					<!-- End of Logo Image -->
+				</div>
+				<!-- End of One Page Logo -->
+				<!-- One Page Meta -->
+				
+				<!-- End of One Page Meta -->
+			</div>
+			<!-- End of One Page Sidebar Header -->
+			<!-- One Page Nav -->
+			<div class="one-page-nav-wrapper js-custom-scrollbar">
+				<ul class="one-page-nav js-one-page-nav" data-prepend-to=".js-prepend-mobile-menu">
+				<li class="is-active">
+						<a href="#Things_to_be_considered" class="">
+							<span class="one-page-nav-icon">
+					<i class="fa fa-plus"></i>
+							</span>Things to be considered<span class="fa fa-caret-down pull-right" style="color:grey!important;">
+								
+							</span></a>
+							<ul>
+							<li class="">
+						<a href="#Add_Team " class="">
+							<span class="one-page-nav-icon">
+					<i class="fa fa-plus-circle"></i>
+							</span>Add Team </a>
+					</li>
+					<li class="">
+						<a href="#Number_of_Job_posts " class="">
+							<span class="one-page-nav-icon">
+					<i class="fa fa-envelope"></i>
+							</span>Number of Job posts </a>
+					</li>
+					<li class="">
+						<a href="#Enabling_SMS" class="">
+							<span class="one-page-nav-icon">
+					<i class="fa fa-check"></i>
+							</span>Enabling SMS</a>
+					</li>
+					</ul>
+					</li>
+					<li class="">
+						<a href="#Jobs_Added" class="">
+							<span class="one-page-nav-icon">
+					<i class="fa fa-plus-circle"></i>
+							</span>Jobs Added</a>
+					</li>
+					<li class="">
+						<a href="#Jobs_Assigned" class="">
+							<span class="one-page-nav-icon">
+								<i class="fa fa-cubes"></i>
+							</span>Jobs Assigned</a>
+					</li>
+					<li class="">
+						<a href="#Inactive_for_7_days" class="">
+							<span class="one-page-nav-icon">
+					<i class="fa fa-low-vision"></i>
+							</span>Inactive for 7 days</a>
+					</li>
+					<li class="">
+						<a href="#Open_positions" class="">
+							<span class="one-page-nav-icon">
+						<i class="fa fa-user"></i>
+							</span>Open positions</a>
+					</li>
+					<li class="">
+						<a href="#Resumes_not_tagged" class="">
+							<span class="one-page-nav-icon">
+				<i class="fa fa-sticky-note-o" ></i>
+							</span>Resumes not tagged</a>
+					</li>
+					<li class="">
+						<a href="#Under_Review" class="">
+							<span class="one-page-nav-icon">
+				<i class="fa fa-pencil-square-o"></i>
+							</span>Resume Status</a>
+					</li>
+					
+					<li class="">
+				<a href="#Closed_positions" class="">
+							<span class="one-page-nav-icon">
+						<i class="fa fa-lock" ></i>
+							</span>Closed Positions</a>
+					</li>
+					
+					
+					
+				</ul>
+			</div>
+			<!-- End of One Page Nav -->
+			<!-- One Page Sidebar Footer -->
+			<footer class="one-page-sidebar-footer">
+				<a href="https://www.skilledtree.com">SkilledTree</a>, all rights reserved. 2016 © </footer>
+			<!-- End of One Page Sidebar Footer -->
+		</div>
+		<!-- End of One Page Sidebar -->
+		<!-- One Page Content -->
+		<div class="one-page-content">
+			<!-- Header -->
+			<header class="header large header-one-page js-header-fixed">
+				<div class="container-fluid container-spaced">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-5">
+							<div class="visible-sm-block visible-xs-block">
+								<!-- Logo Image -->
+								<a href="/" class="logo-image logo-animated">
+									<img src="img/logos/logo.png" alt="logo">
+								</a>
+								<!-- End of Logo Image -->
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-6 col-xs-7">
+							<!-- Menu -->
+							<nav class="right helper">
+								<ul class="menu sf-menu js-menu">
+									<li>
+										<a class="active" href="/hr_managers/dashboard"> Dashboard
+											</a>
+										
+									</li>
+									<li>
+										<a href="/hr_managers/management"> Management
+											</a>
+										
+									</li>
+									<li>
+										<a href="/hr_managers/jobs">Jobs</a>
+										
+									</li>
+									<li>
+										<a href="/hr_managers/resumes">Resumes</a>
+										
+									</li>
+									<li>
+										<a href="/hr_managers/employees">Employees</a>
+										
+									</li>
+									<li>
+										<a href="/hr_managers/gamification">Gamification</a>
+										
+									</li> 
+									<li>
+										<a href="/hr_managers/reports">Reports</a>
+										
+									</li>
+									<li>
+										<a href="/hr_managers/header">Header</a>
+										
+									</li>
+									<li>
+										<a href="/hr_managers/settings">Settings</a>
+										
+									</li>
+
+									
+								</ul>
+							</nav>
+							<!-- End of Menu -->
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- End of Header -->
+			<div id="content">
+				<div class="container-fluid container-spaced">
+					<div class="row">
+					
+						<div class="col-md-12">
+						<br>
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Things_to_be_considered">
+								<h3> Add Team
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">Before getting into SkilledTree, Add your teams in your company. This can be done in the ‘Settings’ page.
+
+
+ 
+
+
+</p>
+</div>
+</div>
+
+						<div class="col-md-12">
+						<br>
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Things_to_be_considered">
+								<h3> Number of Job posts
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content"> Number of Job posts can be decided by SkilledTree. If you need more count, you need to contact SkilledTree for further payments.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+						<div class="col-md-12">
+						<br>
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Things_to_be_considered">
+								<h3> Enabling SMS.
+
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">  SMS will be enabled by SkilledTree. You can write an Email to us. While adding employees,  you might need to have the maximum SMS count. SMS won’t be sent if the count is zero.
+
+
+ 
+
+
+</p>
+</div>
+</div>
+
+						<div class="col-md-12">
+						<br>
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Jobs_Added">
+								<h3> Jobs Added
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content"> Total number of jobs posted by the HRs in your company.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Jobs_Assigned">
+								<h3> Jobs Assigned
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+   <p class="category-content">Total number of jobs assigned by the Hr Manager in your company and
+          the total number of jobs which are posted by you. 
+ 
+
+
+</p>
+</div>
+</div>
+
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info helper pt0" id="Inactive_for_7_days">
+								<h3> Inactive for 7 days
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content"> If the status of the referral candidates were not updated by you for about a week those total count will appear here.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Open_positions">
+								<h3> Open positions
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">Total number of vacant Job positions.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info helper pt0" id="Resumes_not_tagged">
+								<h3> Resumes not tagged
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">Resumes which are uploaded by employees in your company but are not tagged to recruiters by the Hr manager.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Under_Review">
+								<h3> Under Review
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">Total number of referral resumes which are under the status of ‘Under Review’.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="ShortListed">
+								<h3> ShortListed
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">After under reviewing the resumes if the candidates got shortlisted, their resume status should be updated with ‘Short Listed’.Total number of the resumes which are under the status of ‘Short listed’ will be displayed in the dashboard.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Interview">
+
+								<h3> Interview
+
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">Total number of ShortListed resumes which are opted for further interview process will be interviewed by the assigned recruiters
+
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Selected">
+								<h3> Selected
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">Total number of selected candidates in the interview process 
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Rejected">
+								<h3> Rejected
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">Total number of rejected candidates in the interview process.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="On_Process">
+								<h3> On Process
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">Total number of resumes which are updated by the recruiters in the status of ‘On Process’.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" id="Joined">
+								<h3> Joined
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content"> Total number of candidates who have completed all the interview process are yet to join.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="col-md-12">
+							
+							<!-- Category Info -->
+							<div class="category-info  helper pt0" 
+							id="Closed_positions">
+								<h3> Closed Positions
+
+									<!-- Fragment Identifier -->
+									
+									<!-- End of Fragment Identifier -->
+								</h3>
+								<p class="category-content">Total number of filled job positions after referral candidate joined.
+
+ 
+
+
+</p>
+</div>
+</div>
+
+<div class="row">
+				
+				<div class="col-md-8">
+				<img src="/images/H2.png" width="120%">
+				</div>
+			
+				</div>
+
+
+
+
+							<!-- End of Caregory Info -->
+							
+							<!-- Category Info -->
+							
+							
+
+							<!-- End of Caregory Info -->
+							
+							<!-- Category Info -->
+							
+
+
+							
+							<!-- End of Caregory Info -->
+							<!-- File Tree -->
+							
+							<!-- End of FIle Tree -->
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							
+							<!-- Category Info -->
+							
+</div>
+			</div>				<!-- End of Caregory Info -->
+							<!-- Note -->
+							
+							<!-- End of Note -->
+							
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							<!-- Gif Player -->
+							
+							<!-- End of Grid view -->
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							<!-- Table-->
+							<!-- End of Table -->
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							<!-- Browser Support -->
+							
+							<!-- End of Browser Support -->
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							<!-- Faq -->
+							
+							
+							<!-- End of Faq -->
+							<!-- Category Info -->
+							
+							<!-- End of Caregory Info -->
+							<!-- Donate -->
+							
+							<!-- End of Donate -->
+						
+					</div>
+				</div>
+			</div>
+		
+		<!-- End of One Page Content -->
+	
+	<script src="https://s3.amazonaws.com/skilledtree-public/all.js"></script>
+
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+	<!-- 
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+     -->
+</body>
+
+</html>
